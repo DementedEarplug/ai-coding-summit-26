@@ -1,0 +1,26 @@
+filters:
+  and:
+    - file.inFolder("Personal/Conferences/AI Coding Summit + JSNation + React Summit 2026/Plain-Language Version/Talks")
+views:
+  - type: table
+    name: In order
+    order:
+      - file.name
+      - speaker
+      - relevance
+      - takeaway
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: By relevance
+    groupBy:
+      property: relevance
+      direction: ASC
+    order:
+      - file.name
+      - speaker
+      - takeaway
+    sort:
+      - property: file.name
+        direction: ASC
