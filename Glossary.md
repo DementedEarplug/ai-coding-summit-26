@@ -1,6 +1,6 @@
 ---
 type: glossary
-conference: "[[Start Here|AI Coding Summit + JSNation + React Summit 2026, plain-language version]]"
+conference: AI Coding Summit + JSNation + React Summit 2026
 tags:
   - conference
   - plain-language
@@ -47,7 +47,7 @@ A small rule that runs automatically when the agent does something, such as "ref
 Model Context Protocol. A standard way to plug outside tools into an AI agent, such as a design tool, a database or a ticket system. When people say "there's an MCP for Figma," they mean the agent can use Figma through it.
 
 ### WebMCP
-A proposed web standard that lets a website list its own actions, such as "search products" or "add to cart," so an AI assistant can use the site directly instead of guessing where to click. It's experimental and only works in Chrome and Edge for now. [[WebMCP Explained]] covers it in more depth.
+A proposed web standard that lets a website list its own actions, such as "search products" or "add to cart," so an AI assistant can use the site directly instead of guessing where to click. It's experimental and only works in Chrome and Edge for now. [WebMCP Explained](WebMCP%20Explained.md) covers it in more depth.
 
 ### On-device AI
 AI that runs on your own laptop or phone, or inside the browser, instead of on a company's servers. Nothing gets sent out, so it's more private and costs nothing per use. It's also less capable than the big cloud models.

@@ -1,6 +1,6 @@
 ---
 type: guide
-conference: "[[Start Here|AI Coding Summit + JSNation + React Summit 2026, plain-language version]]"
+conference: AI Coding Summit + JSNation + React Summit 2026
 tags:
   - conference
   - plain-language
@@ -9,7 +9,7 @@ tags:
 ---
 # WebMCP explained
 
-WebMCP was my favorite idea from the conference, and it's the one most likely to land on a designer's or SEO person's desk first. This page explains it without code. The technical details are in [[01 - Letting AI Assistants Use Your Website|the Wes Bos talk]] and [[09 - AI Features That Run Inside the Page|the Navya Agarwal talk]].
+WebMCP was my favorite idea from the conference, and it's the one most likely to land on a web specialist's desk first. This page explains it without code. The technical details are in [the Wes Bos talk](Talks/01%20-%20Letting%20AI%20Assistants%20Use%20Your%20Website.md) and [the Navya Agarwal talk](Talks/09%20-%20AI%20Features%20That%20Run%20Inside%20the%20Page.md).
 
 The design and SEO angles below are my own. Neither speaker talked about SEO, so treat those parts as ideas, not findings.
 
@@ -17,7 +17,7 @@ The design and SEO angles below are my own. Neither speaker talked about SEO, so
 
 Right now, when an AI assistant uses a website for someone, it mostly guesses. It takes screenshots and clicks where buttons seem to be, or it reads the page's structure and hopes the labels make sense. Wes Bos called this slow and expensive, and it breaks when the layout changes.
 
-[[Glossary#WebMCP|WebMCP]] lets a website hand the assistant a menu of what it can do. Each item on the menu is called a tool. A store might offer "search products," "filter by size" and "add to cart." A tool has a name, a plain-English description and a list of what it needs, like a size and a color. The assistant reads the menu and calls the tool instead of clicking around.
+[WebMCP](Glossary.md#webmcp) lets a website hand the assistant a menu of what it can do. Each item on the menu is called a tool. A store might offer "search products," "filter by size" and "add to cart." A tool has a name, a plain-English description and a list of what it needs, like a size and a color. The assistant reads the menu and calls the tool instead of clicking around.
 
 The tools run inside the page the person already has open, signed in as that person. The assistant and the person can work in the same tab at the same time. Wes called it "cheaper, faster, and less flaky."
 
@@ -35,7 +35,7 @@ Each tool can be labeled so the assistant knows how careful to be.
 
 - **Read-only.** It only looks things up, like "search products." Safe to call as often as needed.
 - **Consequential.** It does something real, like buying, deleting or submitting. The person should approve it in the moment.
-- **Untrusted content.** What it returns includes text from outsiders, like product reviews or comments. That text could hide instructions aimed at the assistant, which is called [[Glossary#Prompt injection|prompt injection]].
+- **Untrusted content.** What it returns includes text from outsiders, like product reviews or comments. That text could hide instructions aimed at the assistant, which is called [prompt injection](Glossary.md#prompt-injection).
 
 Wes was clear that these labels are "not a security layer." They tell the assistant how to behave. The server still has to check every request.
 
@@ -62,9 +62,9 @@ Watch this space more than act on it. There's no evidence yet that assistants ra
 
 This is the part I care most about, and it needs care.
 
-WebMCP isn't an accessibility standard and doesn't replace one. [[Glossary#Section 508 and WCAG|Section 508 and WCAG]] still apply to every screen. A page with great tools that traps keyboard focus in a pop-up still fails the people who rely on the keyboard.
+WebMCP isn't an accessibility standard and doesn't replace one. [Section 508 and WCAG](Glossary.md#section-508-and-wcag) still apply to every screen. A page with great tools that traps keyboard focus in a pop-up still fails the people who rely on the keyboard.
 
-In the discussion room on day 2, one participant asked whether WebMCP could fold into accessibility work, then argued against it. What agents need and what people need "are going to diverge," and one spec for both could put agents ahead of people. ([[12 - Discussion Room - Setting Agents Up to Succeed|discussion room]])
+In the discussion room on day 2, one participant asked whether WebMCP could fold into accessibility work, then argued against it. What agents need and what people need "are going to diverge," and one spec for both could put agents ahead of people. ([discussion room](Talks/12%20-%20Discussion%20Room%20-%20Setting%20Agents%20Up%20to%20Succeed.md))
 
 With that in mind, I see two roles for it. Neither replaces an accessible page.
 
@@ -84,6 +84,6 @@ The rule I'd keep is that tools help reach a state, and the checks still look at
 ## Words worth knowing
 
 - **Tool.** One action a page offers to an assistant, with a name, a description and the information it needs.
-- **[[Glossary#MCP|MCP]].** The older standard for plugging tools into AI assistants. WebMCP is the version that lives in a web page.
-- **[[Glossary#Accessibility tree|Accessibility tree]].** The page structure screen readers use. Some assistants read it today when there are no tools.
+- **[MCP](Glossary.md#mcp).** The older standard for plugging tools into AI assistants. WebMCP is the version that lives in a web page.
+- **[Accessibility tree](Glossary.md#accessibility-tree).** The page structure screen readers use. Some assistants read it today when there are no tools.
 - **Origin trial.** A browser's way of letting sites test an unfinished feature for a limited time.

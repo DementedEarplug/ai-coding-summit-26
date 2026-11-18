@@ -12,12 +12,11 @@ tags:
 # Letting AI Assistants Use Your Website
 
 **Speaker.** Wes Bos. JSNation, Nov 16.
-**Technical notes.** [[01 - WebMCP - Clicks and Clankers|Full technical version]]
 **How much this matters to you.** High. If assistants start using websites for people, the names, labels and descriptions you write become the instructions they follow.
 
 ## The idea in plain words
 
-Today, when an AI [[Glossary#Agent|agent]] uses a website for you, meaning an AI that clicks and types on your behalf, it works like a stranger. It takes screenshots, reads the page and guesses which button to press. Wes Bos says this is slow, costs a lot and breaks often. [[Glossary#WebMCP|WebMCP]] is a proposed web standard where the page gives the agent a list of things it can do. You ask in plain English, like "turn the rack red," and the agent calls those actions directly. His summary was "Cheaper, faster, and less flaky."
+Today, when an AI [agent](../Glossary.md#agent) uses a website for you, meaning an AI that clicks and types on your behalf, it works like a stranger. It takes screenshots, reads the page and guesses which button to press. Wes Bos says this is slow, costs a lot and breaks often. [WebMCP](../Glossary.md#webmcp) is a proposed web standard where the page gives the agent a list of things it can do. You ask in plain English, like "turn the rack red," and the agent calls those actions directly. His summary was "Cheaper, faster, and less flaky."
 
 He built a 3D gym builder, then realized he didn't want to learn its buttons. So he turned every action, about 89 of them, into a named tool. In a recorded demo a voice agent resized the room, placed a treadmill and changed the theme. It made mistakes, like overlapping pieces, and fixed them when he corrected it in plain language.
 
@@ -25,13 +24,13 @@ The part he cares about most is sharing. You and the agent work in the same open
 
 It is early. Chrome and Edge have it as a trial, and Safari has nothing. One caveat. These notes come from auto-generated transcripts that start partway into the talk, and the first Q&A question was cut off.
 
-## Why it matters if you design or do SEO
+## Why it matters to web specialists
 
 - Each tool has a name and a plain-language description. Someone has to write those, and it is closer to UX writing than to code.
-- Without WebMCP, agents read the page's [[Glossary#Accessibility tree|accessibility tree]], the map of labels and roles that screen readers use, or they take screenshots. In the Q&A he said this works but is slow and wastes [[Glossary#Token|tokens]], the units AI use is billed in. So today's agents lean on the labels you already write.
+- Without WebMCP, agents read the page's [accessibility tree](../Glossary.md#accessibility-tree), the map of labels and roles that screen readers use, or they take screenshots. In the Q&A he said this works but is slow and wastes [tokens](../Glossary.md#token), the units AI use is billed in. So today's agents lean on the labels you already write.
 - His "just find the setting" example was a big vendor dashboard where you ask "where do I block crawlers?" and the agent switches it on. That is a findability problem, and findability is your field.
 - Not every company wants this. He named Amazon and airlines, which profit from upsells at checkout. "Airlines don't want to be a utility."
-- Reviews and comments from strangers can hide instructions aimed at the AI. This is called [[Glossary#Prompt injection|prompt injection]]. WebMCP has a hint to flag that text, but he said it is not a security layer. Asked about banking apps, he said "I know some people are going to get pwned."
+- Reviews and comments from strangers can hide instructions aimed at the AI. This is called [prompt injection](../Glossary.md#prompt-injection). WebMCP has a hint to flag that text, but he said it is not a security layer. Asked about banking apps, he said "I know some people are going to get pwned."
 
 ## What you can do with it
 

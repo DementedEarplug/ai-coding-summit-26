@@ -12,24 +12,23 @@ tags:
 # Lightning Talks - Four Short Lessons
 
 **Speaker.** Paul Bratslavsky, Strapi. Geno Racklin Asher, Meticulous. Tucker Chapin, Render. Jean-François Bisson, Backtick. React Summit, Nov 17.
-**Technical notes.** [[18 - Lightning Talks|Full technical version]]
 **How much this matters to you.** High. The middle two talks are about reviewing AI work and enforcing design rules, and both land on your desk. The first and last matter less for you.
 
 ## The idea in plain words
 
 Four sponsor talks, about six minutes each. Read Racklin Asher and Chapin first.
 
-**Geno Racklin Asher, Meticulous.** Code got cheap, so the slow part became review. He said, without giving a source, that time spent reviewing [[Glossary#Pull request|pull requests]], the proposed changes someone has to approve, has gone up by over 50 percent. If Claude wrote a big change and its tests, and every check passed, would you merge it? Nobody he asked would. When one agent writes both, the [[Glossary#Green check|green check]] that says checks passed means less. Agents test too narrowly. Make a button bigger and the agent tests that the button is bigger, not the 20 pages that use it or the checkout page it now breaks. Perfect tests can't catch a wrong feature. His split is to automate the [[Glossary#Blast radius|blast radius]], everything a change affects, because that has an objective answer. Humans keep the job of judging intent.
+**Geno Racklin Asher, Meticulous.** Code got cheap, so the slow part became review. He said, without giving a source, that time spent reviewing [pull requests](../Glossary.md#pull-request), the proposed changes someone has to approve, has gone up by over 50 percent. If Claude wrote a big change and its tests, and every check passed, would you merge it? Nobody he asked would. When one agent writes both, the [green check](../Glossary.md#green-check) that says checks passed means less. Agents test too narrowly. Make a button bigger and the agent tests that the button is bigger, not the 20 pages that use it or the checkout page it now breaks. Perfect tests can't catch a wrong feature. His split is to automate the [blast radius](../Glossary.md#blast-radius), everything a change affects, because that has an objective answer. Humans keep the job of judging intent.
 
-**Tucker Chapin, Render.** His team kept leaving one review comment. Inline action buttons put the primary action first. Agents kept forgetting. One engineer fixed it by hand 11 times, then added a [[Glossary#Lint rule|lint rule]], an automatic check that flags a banned pattern. The problem stopped, and the rule caught 15 more cases. Agents follow lint messages "as gospel," so the message should explain the right fix. One badly worded message led agents to strip out error reporting that mattered. A rule should hold about 95 percent of the time. If people keep switching it off, move it back to docs or review.
+**Tucker Chapin, Render.** His team kept leaving one review comment. Inline action buttons put the primary action first. Agents kept forgetting. One engineer fixed it by hand 11 times, then added a [lint rule](../Glossary.md#lint-rule), an automatic check that flags a banned pattern. The problem stopped, and the rule caught 15 more cases. Agents follow lint messages "as gospel," so the message should explain the right fix. One badly worded message led agents to strip out error reporting that mattered. A rule should hold about 95 percent of the time. If people keep switching it off, move it back to docs or review.
 
-**Paul Bratslavsky, Strapi.** He ran AI models on his own laptop, called [[Glossary#On-device AI|on-device AI]], for a music learning app. A summary took a minute and an answer 20 seconds, but a lesson took 7.5 minutes, so he moved lessons to Claude. He then shared his tools from Strapi, a content management system, through [[Glossary#MCP|MCP]], a standard way to plug tools and data into AI assistants.
+**Paul Bratslavsky, Strapi.** He ran AI models on his own laptop, called [on-device AI](../Glossary.md#on-device-ai), for a music learning app. A summary took a minute and an answer 20 seconds, but a lesson took 7.5 minutes, so he moved lessons to Claude. He then shared his tools from Strapi, a content management system, through [MCP](../Glossary.md#mcp), a standard way to plug tools and data into AI assistants.
 
-**Jean-François Bisson, Backtick.** He asked Claude to add a feature to a [[Glossary#Vibe coding|vibe-coded]] phone app, built by prompting without reading the code, and it went straight to production.
+**Jean-François Bisson, Backtick.** He asked Claude to add a feature to a [vibe-coded](../Glossary.md#vibe-coding) phone app, built by prompting without reading the code, and it went straight to production.
 
 These notes come from a Whisper transcript plus slide photos.
 
-## Why it matters if you design or do SEO
+## Why it matters to web specialists
 
 - Button order is a design system rule. Chapin shows a design rule can become an automatic check nobody has to repeat in review.
 - Racklin Asher's button example is your territory. A component change that looks fine on one page can break another.

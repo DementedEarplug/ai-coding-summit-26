@@ -16,30 +16,29 @@ tags:
 # Panel - Web Jobs in the AI Era
 
 **Speaker.** Kent C. Dodds, Epic Web. Mark Erikson, Replay. Shaundai Person, Netflix. David Khourshid, Stately.ai. React Summit, Nov 17.
-**Technical notes.** [[14 - Panel - Web Dev Jobs in the AI Era|Full technical version]]
 **How much this matters to you.** High. One panelist names user experience and "the art part" as the work people keep, and another says outright that non-technical people can't yet work the way he does.
 
 ## The idea in plain words
 
 A moderator, not named in the audio, asked four developers how AI changed their jobs. The schedule listed Jack Herrington, but the fourth panelist was David Khourshid. The transcription tool can't tell speakers apart, so quotes carry a name only where the speaker was clear.
 
-Kent C. Dodds has gone furthest. On a solo project with no SOC 2, a common security audit, he pasted a loosely written feature request into an [[Glossary#Agent|agent]], an AI tool that writes code with little supervision. Three hours later it "nailed it." He reviews an agent's work until he's never correcting it, then stops. Now he doesn't see the work until it's live. He admits non-technical people can't yet work this way, though he isn't sure that will matter "a year from now."
+Kent C. Dodds has gone furthest. On a solo project with no SOC 2, a common security audit, he pasted a loosely written feature request into an [agent](../Glossary.md#agent), an AI tool that writes code with little supervision. Three hours later it "nailed it." He reviews an agent's work until he's never correcting it, then stops. Now he doesn't see the work until it's live. He admits non-technical people can't yet work this way, though he isn't sure that will matter "a year from now."
 
-Mark Erikson went the other way on purpose. He caps himself at about three times his old pace and reads most of what the agent writes, so he keeps the system in his head. "We barely reviewed code when we were writing it by hand. And now we have 10 times as many PRs. Who's reviewing that code?" A PR, or [[Glossary#Pull request|pull request]], is a proposed change waiting for someone to check it.
+Mark Erikson went the other way on purpose. He caps himself at about three times his old pace and reads most of what the agent writes, so he keeps the system in his head. "We barely reviewed code when we were writing it by hand. And now we have 10 times as many PRs. Who's reviewing that code?" A PR, or [pull request](../Glossary.md#pull-request), is a proposed change waiting for someone to check it.
 
-Shaundai Person described Netflix. Early on, a tidy codebase turned into "a code base of comments." That made the AI worse, because it copies patterns. Her team now writes down shared standards and agrees on what goes to agents. She called that their [[Glossary#Harness|harness]], the rules, tools and checks around an agent.
+Shaundai Person described Netflix. Early on, a tidy codebase turned into "a code base of comments." That made the AI worse, because it copies patterns. Her team now writes down shared standards and agrees on what goes to agents. She called that their [harness](../Glossary.md#harness), the rules, tools and checks around an agent.
 
 David Khourshid wants some friction. An agent asks "A or B?", you don't understand the question, so you press A. That's the trap.
 
 They disagreed on speed and on reading code. All four agreed that people still decide what's worth building and still own security, data handling and judgment.
 
-## Why it matters if you design or do SEO
+## Why it matters to web specialists
 
 - Shaundai points worried people toward "the art part," user experience and judging value, because "only people can make that determination." That's your work.
 - David says agents skip performance and security unless you ask. "Your app will be slow by default if you don't ask it." Slow pages are an SEO problem, so this one lands on you.
 - One panelist's old company lost million-dollar deals after customer feedback got filtered out. The lesson was to walk through the app as the user and "make it one click."
 - Shaundai warns that new apps collect a lot of personal data. "This is real information about real people." If you add tracking scripts or forms, that includes you.
-- Kent says to keep each [[Glossary#Secret|secret]], a password or key, where the agent "can reference but cannot access."
+- Kent says to keep each [secret](../Glossary.md#secret), a password or key, where the agent "can reference but cannot access."
 
 ## What you can do with it
 
@@ -52,7 +51,7 @@ Our suggestions, drawn from the panel.
 - Never paste passwords or keys into a chat with an agent.
 - Pick your own pace. Mark's three times is a fine target.
 
-For the career side, read [[13 - Growing Your Career When AI Does the Technical Work|growing your career]].
+For the career side, read [growing your career](13%20-%20Growing%20Your%20Career%20When%20AI%20Does%20the%20Technical%20Work.md).
 
 ## Words worth knowing
 

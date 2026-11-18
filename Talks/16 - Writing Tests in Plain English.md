@@ -12,26 +12,25 @@ tags:
 # Writing Tests in Plain English
 
 **Speaker.** Avindra Fernando, principal architect at Taprobane Consulting. AI Coding Summit, Nov 17.
-**Technical notes.** [[16 - Playbook-Based E2E Testing with Playwright|Full technical version]]
 **How much this matters to you.** High. His tests are plain sentences a designer can read and check, and his method works best when the screens are built accessibly.
 
 ## The idea in plain words
 
 Fernando asked the room who had deleted or commented out a failing test instead of working out what it meant. Many hands went up, his too.
 
-His problem is drift. A team writes [[Glossary#Acceptance criteria|acceptance criteria]], the checklist that says when a feature counts as done, and later writes [[Glossary#End-to-end test|end-to-end tests]], scripts that click through the site like a visitor. A year on, some tests fail, some turn [[Glossary#Flaky test|flaky]], passing one run and failing the next, and nobody knows which requirement a test came from. Worse, some still pass but no longer check the requirement.
+His problem is drift. A team writes [acceptance criteria](../Glossary.md#acceptance-criteria), the checklist that says when a feature counts as done, and later writes [end-to-end tests](../Glossary.md#end-to-end-test), scripts that click through the site like a visitor. A year on, some tests fail, some turn [flaky](../Glossary.md#flaky-test), passing one run and failing the next, and nobody knows which requirement a test came from. Worse, some still pass but no longer check the requirement.
 
-His fix works from both ends. Top down, an [[Glossary#Agent|AI agent]] reads the acceptance criteria and writes [[Glossary#Spec|specs]], plain English tests in a "given, when, then" shape. Bottom up, it reads the code and writes specs for what the code really does. The two never match, and the gaps are the point. The rules live in one file he calls a playbook. The team maintains only the playbook, and the agent regenerates everything else. A tool called the Playwright CLI turns each spec into clicks in a real browser.
+His fix works from both ends. Top down, an [AI agent](../Glossary.md#agent) reads the acceptance criteria and writes [specs](../Glossary.md#spec), plain English tests in a "given, when, then" shape. Bottom up, it reads the code and writes specs for what the code really does. The two never match, and the gaps are the point. The rules live in one file he calls a playbook. The team maintains only the playbook, and the agent regenerates everything else. A tool called the Playwright CLI turns each spec into clicks in a real browser.
 
 His demo app tracks conference submissions. The bottom-up scan listed behavior nobody had written down. The form saved an end date before the start date. A name made only of spaces got saved as a blank row. Notes were saved but never shown. Deleting a conference had no confirmation step. A plain English spec took 48 seconds against 1.4 seconds for a regular test. His bet is that less drift saves more. These notes come from a Whisper transcript of the stream and photos of the slides.
 
-## Why it matters if you design or do SEO
+## Why it matters to web specialists
 
 - You can read these specs. One from his demo said "Given no conferences are being tracked. When I open the app. Then it says 'No conferences yet. Add one to get started.'" That's a test of your empty state copy.
 - His playbook bans hidden test IDs. Tests find buttons by role and label, the way a user does. That rule turned up buttons with no accessible name, and the agent proposed a story to fix them.
 - Every bug his scan found is a UX bug. A person has to decide which gaps matter.
-- He said testing animations this way isn't mature yet. A fade can look like a failure. The host suggested smaller tests or [[Glossary#Visual regression|visual regression testing]], which compares screenshots, and he agreed.
-- Short, specific sentences like "click the name field" keep results [[Glossary#Deterministic|deterministic]], the same every run.
+- He said testing animations this way isn't mature yet. A fade can look like a failure. The host suggested smaller tests or [visual regression testing](../Glossary.md#visual-regression), which compares screenshots, and he agreed.
+- Short, specific sentences like "click the name field" keep results [deterministic](../Glossary.md#deterministic), the same every run.
 
 ## What you can do with it
 

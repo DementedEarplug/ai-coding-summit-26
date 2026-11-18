@@ -12,7 +12,6 @@ tags:
 # Let the Browser Do the Work
 
 **Speaker.** Ameer Sami, S&C Electric Company. React Summit, Nov 17.
-**Technical notes.** [[11 - A JavaScript-Less Future|Full technical version]]
 **How much this matters to you.** High. These are built-in browser features for the exact components you design, and the agent won't use them unless you ask by name.
 
 These notes come from a recording transcribed by a speech-to-text tool. Some words were unclear. The browser support claims are the speaker's.
@@ -21,7 +20,7 @@ These notes come from a recording transcribed by a speech-to-text tool. Some wor
 
 Sami's claim is "less JavaScript," not "no JavaScript." JavaScript is the code that makes pages interactive. For years, teams wrote lots of it to build dropdowns, tooltips and pop-up panels. Browsers now do much of that with plain HTML and CSS, the markup and styling languages.
 
-The problem is the AI. His team asked an [[Glossary#Agent|agent]] to replace a tooltip [[Glossary#Library|library]], a ready-made package of someone else's code, with modern browser features. The agent suggested another library. After more back and forth it suggested the plain `title` attribute. "The AI failed, plain and simple." He mentioned a Google [[Glossary#Skill|skill]], a set of instructions you load into an agent, that teaches agents these features. Even with it, he said, you can't count on the agent picking them. People have to know them.
+The problem is the AI. His team asked an [agent](../Glossary.md#agent) to replace a tooltip [library](../Glossary.md#library), a ready-made package of someone else's code, with modern browser features. The agent suggested another library. After more back and forth it suggested the plain `title` attribute. "The AI failed, plain and simple." He mentioned a Google [skill](../Glossary.md#skill), a set of instructions you load into an agent, that teaches agents these features. Even with it, he said, you can't count on the agent picking them. People have to know them.
 
 He rebuilt three pages to show what changes.
 
@@ -29,13 +28,13 @@ He rebuilt three pages to show what changes.
 - **An article page.** The hero image now switches with light and dark mode on its own. Tooltips that needed six event listeners each now open on hover with a built-in delay. That hover feature, called interest invokers, is still experimental. Pop-ups also reposition themselves when they would run off screen. About 38% less JavaScript.
 - **A date range picker.** The panel became a popover, a box that opens on top of the page and closes when you click elsewhere. Anchor positioning pins it under the field. CSS alone highlights the dates between start and hover, and a view transition animates the month change. Only about 7% fewer lines, but he says it would be about 57% if the original had animation. He also said the old way of showing the panel was "not good for accessibility."
 
-For older browsers, his advice was to check [[Glossary#Baseline|Baseline]] status. "Widely available" means a feature has worked in all major browsers for about 30 months, and you can just use it. "Newly available" is more recent.
+For older browsers, his advice was to check [Baseline](../Glossary.md#baseline) status. "Widely available" means a feature has worked in all major browsers for about 30 months, and you can just use it. "Newly available" is more recent.
 
-## Why it matters if you design or do SEO
+## Why it matters to web specialists
 
 - Popovers, anchored menus, native selects and theme-aware images are the components on your screens. Knowing they exist changes what you can ask for.
 - Built-in parts come with behavior a hand-built version has to fake, like closing on an outside click. His accessibility comment on the old panel is one example.
-- `contrast-color()` is a quick win for text on colors pulled from data, but it can pick wrong on mid-tones. Check those against [[Glossary#Section 508 and WCAG|WCAG]] yourself.
+- `contrast-color()` is a quick win for text on colors pulled from data, but it can pick wrong on mid-tones. Check those against [WCAG](../Glossary.md#section-508-and-wcag) yourself.
 - Less JavaScript usually means pages load faster. That's my inference, not a claim from the talk, but it matters for search.
 
 ## What you can do with it
