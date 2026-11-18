@@ -27,7 +27,7 @@ The safety net is more than 12,000 automatic tests that run on every change. Tha
 ## Why it matters to web specialists
 
 - Specs in one shared format were the turning point. Use cases and user goals are things you already write.
-- People can't review everything at this scale, so they sort. The review skill decides whether a change needs a human. New UI that needs human testing goes to QA. That is a likely role for designers.
+- People can't review everything at this scale, so they sort. The review skill decides whether a change needs a human. New UI that needs human testing goes to QA. That is a likely role for web specialists.
 - In more than 9 months they haven't seen agents rewrite tests to pass. [The Hugging Face talk](02%20-%20Making%20AI%20Run%20Fast%20in%20the%20Browser.md) saw the opposite. Two speakers, two experiences. We'd assume it can happen.
 - He uses [CODEOWNERS](../Glossary.md#codeowners), a file that names who must approve changes to each part of the project. People must understand how the system works before they stop reading the code. He said skipping that might be fine for single-use tools, but "for production, it's definitely not."
 - "Every system is safety-critical, to some point." He also warned that a file-deleting command posted in a GitHub issue comment "could be really a problem" if an agent acts on it.

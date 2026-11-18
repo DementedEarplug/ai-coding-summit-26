@@ -29,7 +29,7 @@ A caveat from the source notes: they come from an auto-generated transcript. The
 ## Why it matters to web specialists
 
 - Accessibility labels now have two readers. A button with no name is a barrier for a screen reader user and a dead end for an agent trying to test your flow.
-- Comparing each build against Figma is exactly the check a designer would want. He presented it as something teams can build, not something everyone has.
+- Comparing each build against Figma is exactly the check a web specialist would want. He presented it as something teams can build, not something everyone has.
 - He thinks people will read less code and "as long as it works" will become the standard. He admitted that "might seem disturbing, especially in some of the more secure environments." If fewer people read the code, what you check in the running app counts for more.
 - For SEO the direct lesson is small, since this is about mobile apps. The idea carries to the web, though. See [Letting AI Assistants Use Your Website](01%20-%20Letting%20AI%20Assistants%20Use%20Your%20Website.md).
 

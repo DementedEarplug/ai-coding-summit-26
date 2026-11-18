@@ -97,7 +97,7 @@ A password, API key or other credential the app uses. Secrets must never be past
 A locked-down space where the agent can work without reaching anything important. If it does something wrong in a sandbox, nothing real breaks.
 
 ### Deploy preview
-A temporary, private copy of the site built from one pull request, with its own link. You can click through the change in a real browser before it goes live. For designers, this is often the best place to review an agent's work.
+A temporary, private copy of the site built from one pull request, with its own link. You can click through the change in a real browser before it goes live. For web specialists, this is often the best place to review an agent's work.
 
 ## Checks that catch mistakes
 
@@ -114,7 +114,7 @@ A small program that checks the app does what it should, such as "when you submi
 A test of one small piece in isolation, such as "this function formats a phone number correctly."
 
 ### End-to-end test
-A test that drives the whole app like a user would. It opens a browser, clicks, types and checks what appears on screen. Often shortened to "E2E test." Tools like Playwright run them. These are the tests closest to how designers think about a flow.
+A test that drives the whole app like a user would. It opens a browser, clicks, types and checks what appears on screen. Often shortened to "E2E test." Tools like Playwright run them. These are the tests closest to how web specialists think about a user flow.
 
 ### Flaky test
 A test that sometimes passes and sometimes fails with no code change. Teams learn to ignore flaky tests, which defeats the point of having them.
@@ -152,7 +152,7 @@ Short for specification. A written description of how something should behave. A
 The list of conditions in a ticket that must be true for the work to count as done, often written as "Given, When, Then." Good acceptance criteria turn straight into tests.
 
 ### Statechart
-A diagram of every state a screen or flow can be in and what moves it from one state to the next, such as "empty," "loading," "error," "saved." Designers already draw these as user flows. A statechart is the strict version an agent can follow.
+A diagram of every state a screen or flow can be in and what moves it from one state to the next, such as "empty," "loading," "error," "saved." If you've drawn a user flow, you've drawn one of these. A statechart is the strict version an agent can follow.
 
 ## Web and accessibility
 

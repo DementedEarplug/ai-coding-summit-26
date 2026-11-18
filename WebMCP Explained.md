@@ -39,7 +39,7 @@ Each tool can be labeled so the assistant knows how careful to be.
 
 Wes was clear that these labels are "not a security layer." They tell the assistant how to behave. The server still has to check every request.
 
-## Why designers should care
+## Why it matters for design
 
 These are my suggestions.
 
@@ -48,7 +48,7 @@ These are my suggestions.
 - **The tools and the buttons should match.** A tool should do exactly what the visible button does. If they drift apart, assistants and people end up using two different apps. Ask that every tool maps to something a person can also do on screen.
 - **Flows become menus.** A five-step checkout might become two or three tools. Mapping which steps a person must see and which an assistant can do quietly is a flow-design question.
 
-## Why SEO people should care
+## Why it matters for search
 
 Again, my ideas, not the speakers'.
 

@@ -12,7 +12,7 @@ tags:
 # Map the Flow Before the AI Builds It
 
 **Speaker.** David Khourshid, founder of Stately.ai. React Summit, Nov 17.
-**How much this matters to you.** High. His fix is a user flow diagram with rules attached, which is work designers already know how to do.
+**How much this matters to you.** High. His fix is a user flow diagram with rules attached, which is work web specialists already know how to do.
 
 ## The idea in plain words
 
@@ -29,9 +29,9 @@ He also announced free Stately [skills](../Glossary.md#skill), add-on instructio
 ## Why it matters to web specialists
 
 - A statechart is a user flow with the hidden conditions written in. If you draw loading, error and success states, you're halfway there.
-- His bug example was a rental booking where you could press reserve while the price was still loading. Designers catch bugs like that in previews.
+- His bug example was a rental booking where you could press reserve while the price was still loading. Web specialists catch bugs like that in previews.
 - He said a migration done from a prompt alone will change behavior "even if all the tests pass." Someone has to write down the old behavior first.
-- SEO people will know his crawler history. Once pages changed without the URL changing, the URL stopped describing what the visitor sees.
+- Anyone who works on search will know his crawler history. Once pages changed without the URL changing, the URL stopped describing what the visitor sees.
 
 ## What you can do with it
 

@@ -12,7 +12,7 @@ tags:
 # Writing Tests in Plain English
 
 **Speaker.** Avindra Fernando, principal architect at Taprobane Consulting. AI Coding Summit, Nov 17.
-**How much this matters to you.** High. His tests are plain sentences a designer can read and check, and his method works best when the screens are built accessibly.
+**How much this matters to you.** High. His tests are plain sentences a web specialist can read and check, and his method works best when the screens are built accessibly.
 
 ## The idea in plain words
 

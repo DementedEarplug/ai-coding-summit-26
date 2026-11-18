@@ -12,7 +12,7 @@ tags:
 # Trust and Taste When Agents Write the Code
 
 **Speaker.** Dominik Kundel, OpenAI. AI Coding Summit, Nov 16.
-**How much this matters to you.** High. Half the talk is about taste and visual proof, which is the work designers already do.
+**How much this matters to you.** High. Half the talk is about taste and visual proof, which is work web specialists already do.
 
 ## The idea in plain words
 

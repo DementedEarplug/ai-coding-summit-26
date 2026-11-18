@@ -27,7 +27,7 @@ She gave three strategies. Do the work and tell people about it. Make the people
 ## Why it matters to web specialists
 
 - If you're being asked to ship changes with an AI agent, you're living her point. The typing is cheap now. People notice judgment and relationships.
-- She expects human review of [pull requests](../Glossary.md#pull-request), the formal request to add a change to the shared code, to fade. In her words, "those days are probably numbered." [Review](../Glossary.md#code-review) is how people learn what other teams are doing. Designers and SEO people often already carry that knowledge.
+- She expects human review of [pull requests](../Glossary.md#pull-request), the formal request to add a change to the shared code, to fade. In her words, "those days are probably numbered." [Review](../Glossary.md#code-review) is how people learn what other teams are doing. Web specialists often already carry that knowledge.
 - A design system engineer asked how to grow. Her answer was to work out what matters most and do that first. Choosing what to work on shows you can prioritize as well as build.
 - 38% of people in LeadDev's 2025 AI Impact survey agreed AI tools have cut the mentoring juniors get. She says anyone who knows something the team doesn't can teach it.
 
